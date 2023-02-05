@@ -46,7 +46,7 @@ Here is an example of using the SELECT statement in SQL to retrieve all columns 
 <i>SELECT column1 / column2 AS result FROM table_name;</i></li>
 
 <li>Using a built-in mathematical function, such as square root:<br>
-<i>SELECT SQRT(column1) AS result FROM table_name;</i></li></p>
+<i>SELECT SQRT(column1) AS result FROM table_name;</i></li></ul></p>
 
 <h2>Conditions in SQL</h2>
 <p>Conditions in SQL are used to filter the data returned by a query based on specific criteria. The WHERE clause is used to specify the conditions for a query.</p>
