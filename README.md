@@ -53,19 +53,19 @@ Here is an example of using the SELECT statement in SQL to retrieve all columns 
 <p>Here are a few examples of conditions in SQL:
 
 <ul>
-<li>Retrieve rows where a column has a specific value:
+<li>Retrieve rows where a column has a specific value:<br>
 <i>SELECT * FROM table_name WHERE column1 = 'value';</i></li>
 
-<li>Retrieve rows where a column is greater than a value:
+<li>Retrieve rows where a column is greater than a value:<br>
 <i>SELECT * FROM table_name WHERE column1 > 5;</i></li>
 
-<li>Retrieve rows where a column is between two values:
+<li>Retrieve rows where a column is between two values:<br>
 <i>SELECT * FROM table_name WHERE column1 BETWEEN 5 AND 10;</i></li>
 
-<li>Retrieve rows where a column matches a pattern:
+<li>Retrieve rows where a column matches a pattern:<br>
 <i>SELECT * FROM table_name WHERE column1 LIKE 'A%';</i></li>
 
-<li>You can also use multiple conditions in the WHERE clause using logical operators such as AND and OR. For example:
+<li>You can also use multiple conditions in the WHERE clause using logical operators such as AND and OR. For example:<br>
 <i>SELECT * FROM table_name WHERE column1 = 'value' AND column2 > 5;</i>
 This query will return rows where column1 has the value 'value' and column2 is greater than 5.</li>
 </ul></p>
