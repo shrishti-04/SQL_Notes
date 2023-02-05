@@ -38,11 +38,35 @@ Here is an example of using the SELECT statement in SQL to retrieve all columns 
 <ul>
 <li>Adding two columns:<br>
 <i>SELECT column1 + column2 AS result FROM table_name;</i></li>
+
 <li>Multiplying a column by a constant:<br>
 <i>SELECT column1 * 5 AS result FROM table_name;</i></li>
+
 <li>Dividing a column by another column:<br>
 <i>SELECT column1 / column2 AS result FROM table_name;</i></li>
+
 <li>Using a built-in mathematical function, such as square root:<br>
 <i>SELECT SQRT(column1) AS result FROM table_name;</i></li></p>
 
+<h2>Conditions in SQL</h2>
+<p>Conditions in SQL are used to filter the data returned by a query based on specific criteria. The WHERE clause is used to specify the conditions for a query.</p>
+<p>Here are a few examples of conditions in SQL:
+
+<ul>
+<li>Retrieve rows where a column has a specific value:
+<i>SELECT * FROM table_name WHERE column1 = 'value';</i></li>
+
+<li>Retrieve rows where a column is greater than a value:
+<i>SELECT * FROM table_name WHERE column1 > 5;</i></li>
+
+<li>Retrieve rows where a column is between two values:
+<i>SELECT * FROM table_name WHERE column1 BETWEEN 5 AND 10;</i></li>
+
+<li>Retrieve rows where a column matches a pattern:
+<i>SELECT * FROM table_name WHERE column1 LIKE 'A%';</i></li>
+
+<li>You can also use multiple conditions in the WHERE clause using logical operators such as AND and OR. For example:
+<i>SELECT * FROM table_name WHERE column1 = 'value' AND column2 > 5;</i>
+This query will return rows where column1 has the value 'value' and column2 is greater than 5.</li>
+</ul></p>
 
