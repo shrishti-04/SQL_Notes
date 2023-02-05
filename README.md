@@ -4,7 +4,7 @@
 <h3>Show:</h3><p>The "SHOW" statement in SQL is used to display various information about the database and its components, such as the list of databases, tables, views, indexes, etc. Here are a few examples:
 <ul>
 <li>To show the list of databases:<br>
-<i>SHOW DATABASES;</i>
+<i style="color:blue;">SHOW DATABASES;</i>
 </li>
 <li>To show the list of tables in a database:<br>
 <i>SHOW TABLES;</i>
