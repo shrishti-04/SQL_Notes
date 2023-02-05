@@ -70,3 +70,18 @@ Here is an example of using the SELECT statement in SQL to retrieve all columns 
 This query will return rows where column1 has the value 'value' and column2 is greater than 5.</li>
 </ul></p>
 
+<h3>ORDER Function</h3>
+<p>The ORDER BY clause in SQL is used to sort the results of a query in ascending or descending order based on one or more columns.</p>
+
+<p>Here is an example of using the ORDER BY clause in SQL:</p>
+
+<p><i>SELECT * FROM table_name ORDER BY column1;</i></p>
+<p>This statement will retrieve all the rows from the table "table_name" and sort the results based on the values in the "column1" column in ascending order. By default, the ORDER BY clause sorts the results in ascending order, but you can sort in descending order by using the DESC keyword. For example:</p>
+
+<p><i>SELECT * FROM table_name ORDER BY column1 DESC;</i></p>
+
+<p>This statement will sort the results in descending order based on the values in the "column1" column. You can also sort the results based on multiple columns by listing the columns separated by commas in the ORDER BY clause. For example:</p>
+
+<p><i>SELECT * FROM table_name ORDER BY column1, column2;</i></p>
+
+<p>This statement will sort the results first based on the values in the "column1" column, and then by the values in the "column2" column if there are any ties in the values of the "column1" column.</p>
