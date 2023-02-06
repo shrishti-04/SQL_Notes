@@ -85,3 +85,29 @@ This query will return rows where column1 has the value 'value' and column2 is g
 <p><i>SELECT * FROM table_name ORDER BY column1, column2;</i></p>
 
 <p>This statement will sort the results first based on the values in the "column1" column, and then by the values in the "column2" column if there are any ties in the values of the "column1" column.</p>
+
+<h2>Joins in SQL</h2>
+
+<p>Joins in SQL are used to combine data from two or more tables based on a related column between them. The most common types of joins are INNER JOIN, LEFT JOIN, RIGHT JOIN, and FULL OUTER JOIN.</p>
+
+<p>Here is an example of using an INNER JOIN in SQL:<br>
+SELECT *
+FROM table1
+JOIN table2
+ON table1.column1 = table2.column2;</p>
+
+<p>This statement will return only the rows from both tables where there is a match on the values of table1.column1 and table2.column2. The ON clause specifies the join condition.</p>
+
+<p>Here is an example of using a LEFT JOIN in SQL:<br>
+SELECT *
+FROM table1
+LEFT JOIN table2
+ON table1.column1 = table2.column2;</p>
+
+<p>This statement will return all the rows from the left table (table1), and the matching rows from the right table (table2). If there is no match, the columns from the right table will be filled with NULL values.</p>
+
+<p>Similarly, a RIGHT JOIN returns all the rows from the right table (table2), and the matching rows from the left table (table1). If there is no match, the columns from the left table will be filled with NULL values.</p>
+
+<p>A FULL OUTER JOIN returns all the rows from both tables, and if there is no match, the columns from either table will be filled with NULL values.</p>
+
+<p>Note that the exact syntax for joins may vary between different SQL databases.</p>
