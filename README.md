@@ -4,13 +4,19 @@
 <h3>Show:</h3><p>The "SHOW" statement in SQL is used to display various information about the database and its components, such as the list of databases, tables, views, indexes, etc. Here are a few examples:
 <ul>
 <li>To show the list of databases:<br>
+'''
 <i>SHOW DATABASES;</i>
+'''
 </li>
 <li>To show the list of tables in a database:<br>
+'''
 <i>SHOW TABLES;</i>
+'''
 </li>
 <li>To show the structure of a table:<br>
+'''
 <i>SHOW COLUMNS FROM table_name;</i>
+'''
 </li>
 </ul></p>
 <h3>Describe Function (DESC):</h3><p>The "DESC" statement in SQL is used to describe the structure of a table. It shows information about the columns in a table, such as column name, data type, and constraints.
@@ -111,3 +117,20 @@ ON table1.column1 = table2.column2;</p>
 <p>A FULL OUTER JOIN returns all the rows from both tables, and if there is no match, the columns from either table will be filled with NULL values.</p>
 
 <p>Note that the exact syntax for joins may vary between different SQL databases.</p>
+
+<h2>Group By in SQL</h2>
+
+<p>The GROUP BY clause in SQL is used to group rows that have the same values into summary rows, like "find the number of customers in each city". The GROUP BY clause is often used with aggregate functions such as SUM, AVG, COUNT, MIN, and MAX to perform a calculation on each group.</p>
+
+<p>Here is an example of using the GROUP BY clause in SQL:<br>
+<i>SELECT column1, COUNT(*)<br>
+FROM table_name<br>
+GROUP BY column1;<br></i></p>
+
+<p>This statement will retrieve the distinct values in column1, and return the count of the number of rows for each value.</p>
+
+<p>You can also use multiple columns in the GROUP BY clause to group the data by multiple levels. For example:</p>
+
+<p><i>SELECT column1, column2, SUM(column3)<br>
+FROM table_name<br>
+GROUP BY column1, column2;<br></i></p>
