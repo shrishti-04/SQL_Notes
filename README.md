@@ -5,7 +5,7 @@
 
 <ul>
 <li>To show the list of databases:<br>
-   ```SHOW DATABASES;```
+   <pre><samp>SHOW DATABASES;</samp></pre>
 </li>
 <li>To show the list of tables in a database:<br>
    <i>SHOW TABLES;</i>
