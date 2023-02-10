@@ -2,7 +2,7 @@
 <h2>SQL:</h2><p> SQL (Structured Query Language) is a standard programming language used to manage and manipulate relational databases. It is used to perform various operations, such as inserting, updating, and retrieving data from a database, creating and altering database structures, and controlling access to the data. SQL is an essential tool for working with databases and is widely used in data analysis and business intelligence applications. </p>
 
 <h3>Show:</h3><p>The "SHOW" statement in SQL is used to display various information about the database and its components, such as the list of databases, tables, views, indexes, etc. Here are a few examples:
-'''
+```
 <ul>
 <li>To show the list of databases:<br>
 <i>SHOW DATABASES;</i>
@@ -14,7 +14,7 @@
 <i>SHOW COLUMNS FROM table_name;</i>
 </li>
 </ul>
-'''
+```
 </p>
 <h3>Describe Function (DESC):</h3><p>The "DESC" statement in SQL is used to describe the structure of a table. It shows information about the columns in a table, such as column name, data type, and constraints.
 
