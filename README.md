@@ -131,3 +131,30 @@ GROUP BY column1;<br></pre></p>
 <p><pre>SELECT column1, column2, SUM(column3)<br>
 FROM table_name<br>
 GROUP BY column1, column2;<br></pre></p>
+
+<h2>Strings in SQL</h2>
+
+<p>SQL provides a variety of functions for working with strings. Some of the most commonly used string functions are:</p>
+<p><ul>
+<li>CONCAT: This function is used to concatenate (combine) two or more strings into a single string. For example: CONCAT('Hello, ', 'world!') will return Hello, world!.</li>
+<li>LENGTH: This function returns the number of characters in a string. For example: LENGTH('Hello, world!') will return 13</li>
+<li>SUBSTRING: This function returns a portion of a string. For example: SUBSTRING('Hello, world!', 7, 5) will return world.</li>
+<li>TRIM: This function is used to remove spaces from the beginning and end of a string. For example: TRIM(' Hello, world! ') will return Hello, world!.</li>
+<li>UPPER and LOWER: These functions are used to convert a string to uppercase or lowercase, respectively. For example: UPPER('Hello, world!') will return HELLO, WORLD!, and LOWER('Hello, world!') will return hello, world!.</li>
+<li>REPLACE: This function is used to replace a portion of a string with another string. For example: REPLACE('Hello, world!', 'world', 'SQL') will return Hello, SQL!.</li></ul></p>
+
+<p>These functions can be used in SQL queries to manipulate strings and create new columns with modified string values.</p>
+
+<h3>Distinct</h3>
+
+<p>The DISTINCT keyword in SQL is used to return only unique (distinct) values in the result set of a query. When a query is executed with the DISTINCT keyword, it returns only one row for each unique combination of values in the selected columns.</p>
+
+<p>Here's an example of using the DISTINCT keyword in a SQL query:</p>
+<p><pre>SELECT DISTINCT column1, column2 <BR>
+FROM table_name;</pre></p>
+
+<p>In this example, the query is selecting data from the table_name table and returning only the unique combinations of values in columns column1 and column2. Any duplicates in the result set will be removed.</p>
+
+<p>The DISTINCT keyword is often used to eliminate duplicate values and ensure that the result set only contains unique values.</p>
+
+
