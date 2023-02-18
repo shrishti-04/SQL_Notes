@@ -157,4 +157,21 @@ FROM table_name;</pre></p>
 
 <p>The DISTINCT keyword is often used to eliminate duplicate values and ensure that the result set only contains unique values.</p>
 
+<h3>Having</h3>
+<p>HAVING is a SQL clause that is used in conjunction with the GROUP BY clause to filter the results of a query based on aggregated values.</p>
+
+<p>When you use the GROUP BY clause, the result set is divided into groups based on the values in the specified columns. The HAVING clause is then used to filter these groups based on the result of an aggregate function, such as SUM, COUNT, AVG, MIN, or MAX.
+
+For example, suppose you have a table of orders with columns for order_id, customer_id, order_date, and order_total. You want to find the total order value for each customer and only return the results for customers with a total order value greater than 1000.
+
+You can use the GROUP BY clause to group the orders by customer_id and the SUM function to calculate the total order value for each customer. The HAVING clause can then be used to filter the results based on the sum of the order totals for each customer:</p>
+
+<p><pre>SELECT customer_id, SUM(order_total) as total_order_value <br>
+FROM orders <br>
+GROUP BY customer_id <br>
+HAVING SUM(order_total) > 1000;<br></pre></p>
+
+<p>In this example, the HAVING clause is used to filter the groups based on the total order value for each customer. The groups that have a total order value greater than 1000 will be included in the result set.
+
+Note that the HAVING clause is applied after the GROUP BY clause, so it can only reference columns that are being grouped or aggregated. Any columns that are not included in the GROUP BY or aggregate functions must be referenced in the SELECT statement.</p>
 
