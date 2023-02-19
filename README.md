@@ -1,6 +1,46 @@
 <h1>SQL Notes</h1>
 <h2>SQL:</h2><p> SQL (Structured Query Language) is a standard programming language used to manage and manipulate relational databases. It is used to perform various operations, such as inserting, updating, and retrieving data from a database, creating and altering database structures, and controlling access to the data. SQL is an essential tool for working with databases and is widely used in data analysis and business intelligence applications. </p>
 
+<h3>Different types of SQL:</h3>
+<p>I see. In SQL, there are different types of commands or statements that are used to interact with the database. The most common types of SQL commands include:</p>
+
+<p><ol>
+<li>Data Definition Language (DDL): These commands are used to define and manage the structure of the database, including creating tables, altering table structures, and dropping tables.</li>
+<li>Data Manipulation Language (DML): These commands are used to manipulate the data within the tables, including inserting, updating, and deleting data.</li>
+<li>Data Control Language (DCL): These commands are used to control access to the database, including granting and revoking permissions to users.</li>
+<li>Transaction Control Language (TCL): These commands are used to control transactions, including committing transactions or rolling them back.</li>
+</ol></p>
+
+<p>Some common SQL commands within each category include:</p>
+<p>DDL:
+<ul>
+<li>CREATE: Used to create a new database or table.</li>
+<li>ALTER: Used to modify an existing database or table.</li>
+<li>DROP: Used to delete a database or table.</li>
+</ul></p>
+
+<p>DML:
+<ul>
+<li>SELECT: Used to retrieve data from one or more tables.</li>
+<li>INSERT: Used to add new data to a table.</li>
+<li>UPDATE: Used to modify existing data in a table.</li>
+<li>DELETE: Used to remove data from a table.</li>
+</ul></p>
+
+<p>DCL:
+<ul>
+<li>GRANT: Used to give permission to users to perform certain actions on the database.</li>
+<li>REVOKE: Used to remove permission from users to perform certain actions on the database.</li>
+</ul></p>
+
+<p>TCL:
+<ul>
+<li>COMMIT: Used to save changes to the database.</li>
+<li>ROLLBACK: Used to undo changes to the database.</li>
+</ul></p>
+
+<p>Each SQL dialect or database management system may have additional or slightly different commands within these categories, but these are some of the most commonly used commands in SQL.</p>
+
 <h3>Show:</h3><p>The "SHOW" statement in SQL is used to display various information about the database and its components, such as the list of databases, tables, views, indexes, etc. Here are a few examples:
 
 <ul>
